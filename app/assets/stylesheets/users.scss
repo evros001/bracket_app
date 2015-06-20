@@ -1,0 +1,293 @@
+/*// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/*/
+
+/*
+screen, overlay, darken, lighten, color-dodge, color-burn, hard-light, soft-light, difference, exclusion, hue, saturation, color, and luminosity. And also normal which reset it.*/
+.index {
+  background-image: url(BG-image.jpg);
+  background-size: cover;
+  position:fixed;
+  width:100%;
+  height:100%;
+  top:0px;
+  left:0px;
+  background-color: #a2a2a2;
+  background-blend-mode: multiply;
+};
+
+.darken {
+  background-image: url(BG-image.jpg);
+  background-size: cover;
+  position:fixed;
+  width:100%;
+  height:100%;
+  top:0px;
+  left:0px;
+  background-color: #828282;
+  background-blend-mode: multiply;
+}
+
+.title_txt {
+  position: absolute;
+  font-family: 'Open Sans', sans-serif;
+  left: 35%;
+  top: 30%;    
+  margin-left: -170px;
+  width: 750px;
+  height: 52px;
+  font-size: 60px;
+  color: #fff;
+}
+
+#search_box {
+  position: absolute;
+  left: 50%;
+  top: 50%;    
+  margin-left: -170px;
+  width: 150px;
+  height: 22px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+input[type=submit] {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background-color:green;
+  opacity: .9;
+  border: 2px solid white;
+  font-size: 22px;
+  color: white;
+  margin-left: 130px;
+  margin-top: 20px;
+  opacity: .7;
+}
+
+input[type=submit]:hover {
+  color: #0af;
+  background-color:#462727;
+  font-size: 30px;
+  opacity: .9
+}
+
+input[type=text] {
+  width: 350px;
+  height: 65px;
+  font-size: 30px;
+  color: #555;
+  border: 2px solid green;
+}
+
+input[type=text]:hover {
+  background-color: #462727;
+  opacity:.8;
+  color: white;
+}
+
+input.error, textarea.error {
+ border: 5px solid red;
+}
+
+h3.error {
+ color: red;
+ width: 300px;
+ font-weight: 2.0;
+ border: 2px solid red;
+ background-color: #fff;
+ text-align: center;
+}
+
+#spin {
+  opacity: 1.0
+}
+
+/******************
+Results
+******************/
+
+div.container-fluid {
+  height: 100vh;
+  width: 100%;
+
+}
+
+div.col-md-6 {
+  max-height: 100%;
+  overflow: scroll;
+
+}
+
+#grey {
+  background-color: #f6f6f6;
+}
+.bad_results {
+  border-bottom: 3px solid #d7d7d7;
+}
+
+#Btile_0, #Gtile_0{
+  margin-top: 105px;
+}
+
+.row.page-header {
+  position: fixed;
+  background-color: white;
+  padding-right: 100%;
+  margin-top: 0px;
+}
+
+#good {
+  background-color: #00e4b4;
+  opacity: 1.0;
+  margin-left: -30px;
+}
+
+#bad {
+  background-color: #f42c4d;
+  opacity: 1.0;
+  display: inline-block;
+}
+
+.header_img {
+  float: left;
+  height: 60px;
+  width: 60px;
+  color: #fff;
+  margin-left: 500%;
+  margin-top: 10px;
+  float: left;
+}
+
+/*bad places*/
+
+.grade {
+  float: right;
+  margin-top: -65px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  width: 40px;
+  padding-left: 11px;
+  color: #fff;
+  background-color: #f42c4d;
+  height: 40px;
+  font-size: 20px;
+  padding-top: 4px;
+}
+
+.violation_description {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  display: none;
+  color: #4b4e52;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+.bad_name {
+  font-size: 26px;
+  color: #191e25;
+  list-style: none;
+  margin: 30px 0px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+/*icons*/
+
+img#hands {
+  height: 35px;
+  width: 35px;
+}
+
+img#roach {
+  -webkit-transform: rotate(90deg);
+  height: 45px;
+}
+
+img#fly {
+  -webkit-transform: rotate(90deg);
+  height: 35px;
+}
+
+img#trash {
+  height: 30px;
+}
+
+img#fish {
+  height: 35px;
+}
+
+img.icon {
+  height: 50px;
+  display: none;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+
+.bad_name:hover {
+  color: #999;
+}
+
+/*good places*/
+
+.good_name {
+  background-color: #fff;
+  font-size: 26px;
+  color: #191e25;
+  list-style: none;
+  margin: 30px 0px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+.good_results {
+  border-bottom: 3px solid #d7d7d7;
+}
+
+.Gimg{
+  float: right;
+  margin-top: -55px;
+}
+
+.type {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 200;
+  color: #191e25;
+  font-size: 22px;
+  font-style: italic;
+  list-style: none;
+  margin-top: -25px;
+  margin-bottom: 10px;
+  display: none;
+
+}
+.snippet {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #191e25;
+  list-style: none;
+  margin-bottom: 10px;
+  display: none;
+}
+.yelp_link {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #00e4b4;
+  display: none;
+}
+
+.good_name:hover {
+  color: #999;
+}
+
+
+
+
+
+
+
+
+
+

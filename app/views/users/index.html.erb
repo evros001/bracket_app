@@ -1,0 +1,13 @@
+
+<div class="index">
+  <div class="title_txt">Where Should I Eat In NYC?</div>
+  <div id="search_box">
+    <%= form_for @user, url: {action: "create"} do |f| %>
+    <%= f.text_field :address, :placeholder => "Enter Your Zip Code"%>
+    <%= f.submit ">" %>
+    <% end %>
+  </div>
+  <div id="spin"></div>
+
+</div>
+
